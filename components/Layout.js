@@ -1,10 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Nav from './Nav'
 
 export default function Layout(props) {
     return (
-        <div className={styles.container}>
-            {props.children}
-        </div>
+        <>
+            <Nav />
+            <div className={styles.container}>
+                {props.children}
+            </div>
+        </>
     )
 }
